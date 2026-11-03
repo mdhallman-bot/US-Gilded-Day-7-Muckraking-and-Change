@@ -32,3 +32,10 @@ Lesson: Monday, November 9, 2026 (100 minutes). Central question: Why does expos
 This is not the separate 7-question all-MC Google Form (to be created later).
 
 Note: Images hosted by the Library of Congress and Google Apps Script are not guaranteed to function without network access; student work and PDF rendering use local persistence and locally hosted jsPDF. Do not assign to students until the teacher-side live tests pass.
+
+## November 3 expanded Day 7 lesson revision — not yet live-tested
+- Eight Yes/No government policy prompts were added to the saved state schema, PDF and completion count; existing field IDs remain unchanged. The completion denominator is now **17**.
+- Revised sequence totals approximately 87 minutes of HTML + 10-minute separate seven-question all-MC Google Form; actual classroom timing has not been measured.
+- Historical child labor now includes family economics and an ethical discussion, five images, government-change comparison and Populism; Section 7 includes YouTube Scripps News and 2023 NYT reporting.
+- The exact teacher-supplied modern photograph is **not yet committed locally**: Section 7 currently references a published photo of the same 14-year-old construction worker via Scholastic, whose embedding in school browsers needs a live check. Other new external historical photos also need a live check and ideally local copies.
+- Saving protocol, namespace, endpoint, cloud API, localStorage keys and existing answer field IDs have not changed. Test existing-alias restoration and new field round trip, including all eight radio controls, before classroom use.
