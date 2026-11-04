@@ -39,3 +39,13 @@ Note: Images hosted by the Library of Congress and Google Apps Script are not gu
 - Historical child labor now includes family economics and an ethical discussion, five images, government-change comparison and Populism; Section 7 includes YouTube Scripps News and 2023 NYT reporting.
 - The exact teacher-supplied modern photograph is **not yet committed locally**: Section 7 currently references a published photo of the same 14-year-old construction worker via Scholastic, whose embedding in school browsers needs a live check. Other new external historical photos also need a live check and ideally local copies.
 - Saving protocol, namespace, endpoint, cloud API, localStorage keys and existing answer field IDs have not changed. Test existing-alias restoration and new field round trip, including all eight radio controls, before classroom use.
+
+
+## November 3 revision: expanded analytical checks
+- Sinclair's question now asks whether he would consider the book a success, using his reported disappointment about workers' welfare; same response ID `jungleWriting`.
+- Historical child labor context includes two distinct 1900 measures: 18.2% of ages 10–15 worked, and 79.8% of ages 10–14 attended some school. These are **not** interchangeable age cohorts and school attendance does not prove lack of work.
+- Existing `hineWriting` now asks students to take the role of a 1905 lawmaker, weighing workers, families, employers, and accompanying reforms.
+- New saved fields: `govWriting`, `farmWriting`, `article1–article3`, and `video1–video5`. The state schema now contains **27 fields**, and the completion denominator is **27**. Original saved field IDs, Apps Script endpoint, lesson namespace, revision and save functions remain unchanged.
+- Only one `assets/pullman.jpg` image remains. The substitutions in the original photo gallery and Populist section still need **live image-load and zoom checks** (Populist image is externally hosted).
+- Extra article/video questions extend reading time. The original 87-minute HTML estimate is no longer reliable. Time this with a student before classroom use; protect the separate 10-minute Google Form.
+- **Release not verified:** existing-alias recovery after schema expansion, new radio selections round-trip through cloud, completion grade, both PDFs, image and zoom availability on school devices, and video availability. Do not change or clear student work during tests. Use an unused test alias.
