@@ -167,7 +167,7 @@ window.addEventListener('online',()=>{if(ready&&dirty&&!offline&&!conflict)save(
 window.addEventListener('beforeunload',e=>{if(ready&&(dirty||inflight)){e.preventDefault();e.returnValue='';}});
 document.querySelectorAll('.zoom').forEach(b=>b.onclick=()=>{let el=b.closest('.photo');byId('zoomImage').src=el.querySelector('img').src;byId('zoomImage').alt=el.querySelector('img').alt;byId('zoomCaption').textContent=el.querySelector('strong').textContent;byId('zoomDialog').showModal();});byId('zoomClose').onclick=()=>byId('zoomDialog').close();
 document.querySelectorAll('.check-answer').forEach(btn=>btn.onclick=()=>{let k=btn.dataset.check,chosen=state[k],r=byId('fb-'+k);r.classList.remove('hidden');r.textContent=!chosen?'Choose an answer first.':chosen===btn.dataset.correct?'Correct. Explain how the evidence supports that idea.':'Not yet. Reread the section and distinguish the goal from the outcome.';});
-document.querySelectorAll('.vocab').forEach(btn=>{btn.setAttribute('aria-label',btn.textContent+' — '+btn.dataset.def);btn.title=btn.dataset.def;btn.onclick=()=>alert(btn.dataset.def);});
+document.querySelectorAll('.vocab').forEach(btn=>{btn.setAttribute('aria-label',btn.textContent+' — '+btn.dataset.def);btn.removeAttribute('title');btn.onclick=()=>alert(btn.dataset.def);});
 document.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>{img.style.display='none';const p=document.createElement('p');p.className='image-fallback';p.textContent='Image unavailable here. Open the source link under this image to inspect the original.';img.parentNode.insertBefore(p,img.nextSibling);}));
 })();
 </script>
